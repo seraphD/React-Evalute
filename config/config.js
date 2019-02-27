@@ -5,7 +5,7 @@ module.exports={
 	user:'root',
 	password:'123',
 	database:'react-eval',
-	basicURL_T:'http://localhost:4000/teacher',
-	basicURL_S:'http://localhost:4000/student',
-	basicURL:'http://localhost:4000'
+	basicURL_T:'47.100.45.240:4010/teacher',
+	basicURL_S:'47.100.45.240:4010/student',
+	basicURL:'http://47.100.45.240:4010'
 };
