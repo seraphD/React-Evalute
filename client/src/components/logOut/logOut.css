@@ -1,0 +1,15 @@
+.log-out {
+	position: relative;
+	width: 100px;
+	left: 1250px;
+	top: 30px;
+}
+.log-out-btn {
+	width: 80px;
+}
+.log-out-info {
+	position: relative;
+	left: 50px;
+	top: -30px;
+	color: white;
+}

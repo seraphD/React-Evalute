@@ -1,0 +1,63 @@
+/*.home{
+	position: relative;
+	left:100px;
+	top: 100px;
+}
+.tabs{
+	position: relative;
+	left: 200px;
+	top: 10px;
+	width: 700px
+}*/
+/*.top{
+	position: absolute;
+	width: 1536px;
+	height: 100px;
+	background-color: #6495ED;
+}*/
+/*.eval{
+	position: absolute;
+	left: 350px;
+	top: 130px;
+	width: 1050px;
+}*/
+/*.evalBtn{
+	position: relative;
+	left: 150px;
+	top: -40px;
+}*/
+/*.chartBtn{
+	position: relative;
+	top: 65px;
+}*/
+/*.ClassManageTab{
+	width: 500px;
+	position: relative;
+}*/
+/*.importExcel{
+	position: relative;
+	left: 100px;
+	top: -40px;
+}*/
+/*.taskRow{
+	margin-bottom: 20px;
+}*/
+/*.charts{
+	margin-bottom: 20px;
+}*/
+/*.editable-row .ant-form-explain {
+  position: absolute;
+  font-size: 12px;
+  margin-top: -4px;
+}*/
+/*.addRow{
+	margin-bottom: 20px;
+}*/
+/*.extraInfo{
+	position: relative;
+	width: 150px;
+	left: 750px;
+	top:-800px;
+	font-size: 20px;
+	margin: 0px;
+}*/

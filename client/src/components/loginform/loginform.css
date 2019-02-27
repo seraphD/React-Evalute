@@ -1,0 +1,32 @@
+label {
+	position: relative;
+	display: block;
+	margin-top: 50px;
+	font-size: 120%;
+}
+#login {
+	position: relative;
+	top: 30px;
+	left: 60px;
+	width: 70%;
+	height: 40px;
+	border-radius: 10px;
+	background-color: #A2B5CD;
+	border-style: none;
+	font-size: 120%;
+	font-weight: bold;
+}
+input {
+	position: relative;
+	margin-left: 10px;
+	top: -1px;
+	border-radius: 5px;
+	border-color: lightgray;
+	border-width: 1.5px;
+	border-color: black;
+	width: 300px;
+	height: 20px;
+}
+input:focus {
+	outline: none;
+}

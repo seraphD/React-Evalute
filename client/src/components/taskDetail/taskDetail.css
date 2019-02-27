@@ -1,0 +1,32 @@
+.m-status {
+	position: relative;
+	width: 90px;
+	height: 70px;
+	left: 170px;
+	top: -80px;
+}
+.u-point {
+	font-size: 50px;
+}
+.u-upload-btn {
+	position: relative;
+	top: -40px;
+	left: 50px;
+}
+.u-submit {
+	position: relative;
+	top: 140px;
+	left: 200px;
+	width: 100px;
+	margin-left: 50px;
+}
+#u-task-card {
+	display: inline-block;
+	margin: 20px;
+	border: 2x solid;
+	width: 300px;
+	height:230px;
+}
+#drawer-upload {
+	margin-bottom: 10px;
+}
