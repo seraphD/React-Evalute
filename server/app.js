@@ -29,6 +29,6 @@ app.post('/getStudentName',bodyParser.json(),(req,res)=>{
 	db.getStudentName(req,res);
 })
 
-app.listen(4000, () => {
+app.listen(4010, () => {
  console.log('Go to http://localhost:4000');
 });
