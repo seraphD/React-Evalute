@@ -30,5 +30,5 @@ app.post('/getStudentName',bodyParser.json(),(req,res)=>{
 })
 
 app.listen(4010, () => {
- console.log('Go to http://localhost:4000');
+ console.log('Go to http://localhost:4010');
 });
