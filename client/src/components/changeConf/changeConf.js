@@ -102,7 +102,7 @@ class EditableTable extends React.Component{
                   <EditableContext.Consumer>
                     {form => (
                       <a
-                        href="javascript:;"
+                        
                         onClick={() => this.save(form, record.key)}
                         style={{ marginRight: 8 }}
                       >
@@ -247,6 +247,7 @@ class ChangeConf extends React.Component{
       		}
       		let evaltaskdetail=response.data;
       		data.length=0;
+		//eslint-disable-next-line
       		evaltaskdetail.data.map((item,i)=>{
               data.push({
               	key:i,
@@ -280,6 +281,7 @@ class ChangeConf extends React.Component{
    					message.error("小组成员人数至少为1");
    				}else if(values.self<0 || values.self>=1 || values.teacher<0 || values.teacher>=1 || values.students<0|| values.students>=1){
    					message.error("比重不能小于0或大于等于1")
+					//eslint-disable-next-line
    				}else if(values.self*1+values.teacher*1+values.students*1!=1){
    					message.error("比重相加必须等于1");
    				}else{
