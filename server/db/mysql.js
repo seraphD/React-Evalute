@@ -74,7 +74,7 @@ exports.getConf = function(req,res){
 
 exports.checkEvalComplete = function(req,res){
 	const {name,title,size,r1,r2,r3,className}=req.body;
-	var sql4=`select * from evalDetail where submit='${name}' and title='${title}' and sum!=0;`;
+	var sql4=`select * from evaldetail where submit='${name}' and title='${title}' and sum!=0;`;
 	connection.query(sql4,(err,results)=>{
 		if(err)throw err;
 		else{
@@ -138,11 +138,11 @@ exports.eval = function(req,res){
 
 exports.evalDetail = function(req,res){
 	const {name,title,submit,type}=req.body;
-	connection.query(`select * from evalDetail where name='${name}' and title='${title}' and submit='${submit}';`,(err,results)=>{
+	connection.query(`select * from evaldetail where name='${name}' and title='${title}' and submit='${submit}';`,(err,results)=>{
 		if(err)throw err;
 		else{
 			if(results.length==0){
-				connection.query(`insert into evalDetail value('${name}','${submit}','${title}','${initEvaldata}',0,${type});`)
+				connection.query(`insert into evaldetail value('${name}','${submit}','${title}','${initEvaldata}',0,${type});`)
 				res.send([{name:`${name}`,submit:`${submit}`,title:`${title}`,results:`${initEvaldata}`,sum:0,type:`${type}`}]);
 			}else{
 				res.send(results);
@@ -163,7 +163,7 @@ exports.submitDetail = function(req,res){
 
 exports.getInitData = function(req,res){
 	const {name,title,submit}=req.body;
-	connection.query(`select * from evalDetail where name='${name}' and title='${title}' and submit='${submit}';`,(err,results)=>{
+	connection.query(`select * from evaldetail where name='${name}' and title='${title}' and submit='${submit}';`,(err,results)=>{
 		if(err)throw err;
 		else{
 			res.send(results);
@@ -220,7 +220,7 @@ exports.distribute = function(req,res){
 }
 
 exports.getEvalForm = function(req,res){
-	connection.query('select * from evalForm order by tid,item_order;',(err,results)=>{
+	connection.query('select * from evalform order by tid,item_order;',(err,results)=>{
 		if(err)throw err;
 		else{
 			return res.json({
@@ -232,11 +232,11 @@ exports.getEvalForm = function(req,res){
 
 exports.doEval = function(req,res){
 	const {info,result}=req.body;
-	connection.query(`select * from evalDetail where name='${info.id}' and submit='${info.submit}' and title='${info.title}';`,(err,results)=>{
+	connection.query(`select * from evaldetail where name='${info.id}' and submit='${info.submit}' and title='${info.title}';`,(err,results)=>{
 		if(results.length===0){
-			connection.query(`insert into evalDetail value('${info.id}','${info.submit}','${info.title}','${initEvaldata}','${result}',${info.sum});`)
+			connection.query(`insert into evaldetail value('${info.id}','${info.submit}','${info.title}','${initEvaldata}','${result}',${info.sum});`)
 		}else{
-			connection.query(`update evalDetail set results='${result}',sum=${info.sum} where name='${info.id}' and submit='${info.submit}' and title='${info.title}';`)
+			connection.query(`update evaldetail set results='${result}',sum=${info.sum} where name='${info.id}' and submit='${info.submit}' and title='${info.title}';`)
 		}
 	})
 	return res.json({
