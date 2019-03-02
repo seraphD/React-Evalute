@@ -2,7 +2,7 @@ module.exports={
 	port:4000,
 	apiPort:4001,
 	host:"localhost",
-	user:'evaluate',
+	user:'react-evaluate',
 	password:'Wingofyou12.',
 	database:'react-evaluate',
 	basicURL_T:'47.100.45.240:4010/teacher',
