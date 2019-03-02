@@ -5,7 +5,7 @@ module.exports={
 	user:'react-evaluete',
 	password:'Wingofyou12.',
 	database:'react-evaluate',
-	basicURL_T:'47.100.45.240:4010/teacher',
-	basicURL_S:'47.100.45.240:4010/student',
-	basicURL:'47.100.45.240:4010'
+	basicURL_T:'http://47.100.45.240:4010/teacher',
+	basicURL_S:'http://47.100.45.240:4010/student',
+	basicURL:'http://47.100.45.240:4010'
 };
