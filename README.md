@@ -1,10 +1,11 @@
 # 学生教务管理系统 
 
 技术栈：
-- React
-- antd
-- express
-- Mysql
+- 使用react和antd设计前端界面
+- 使用react-router进行页面切换
+- 使用redux进行不同页面间的信息共享
+- 用express实现后端
+- 用mysql记录用户信息、课程信息和评分信息、评分标准等
 
 ## 实现的基本功能
 
