@@ -4,7 +4,7 @@ module.exports={
 	host:"localhost",
 	user:'react-evaluate',
 	password:'Wingofyou12.',
-	database:'react-evaluate',
+	database:'evaluate',
 	basicURL_T:'47.100.45.240:4010/teacher',
 	basicURL_S:'47.100.45.240:4010/student',
 	basicURL:'http://47.100.45.240:4010'
